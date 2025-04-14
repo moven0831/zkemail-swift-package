@@ -261,6 +261,17 @@ RustBuffer uniffi_mopro_bindings_fn_func_generate_circom_proof(RustBuffer zkey_p
 RustBuffer uniffi_mopro_bindings_fn_func_generate_halo2_proof(RustBuffer srs_path, RustBuffer pk_path, RustBuffer circuit_inputs, RustCallStatus *_Nonnull out_status
 );
 #endif
+#ifndef UNIFFI_FFIDEF_UNIFFI_MOPRO_BINDINGS_FN_FUNC_PROVE
+#define UNIFFI_FFIDEF_UNIFFI_MOPRO_BINDINGS_FN_FUNC_PROVE
+int8_t uniffi_mopro_bindings_fn_func_prove(RustCallStatus *_Nonnull out_status
+    
+);
+#endif
+#ifndef UNIFFI_FFIDEF_UNIFFI_MOPRO_BINDINGS_FN_FUNC_PROVE_ZKEMAIL
+#define UNIFFI_FFIDEF_UNIFFI_MOPRO_BINDINGS_FN_FUNC_PROVE_ZKEMAIL
+RustBuffer uniffi_mopro_bindings_fn_func_prove_zkemail(RustBuffer srs_path, RustBuffer inputs, RustCallStatus *_Nonnull out_status
+);
+#endif
 #ifndef UNIFFI_FFIDEF_UNIFFI_MOPRO_BINDINGS_FN_FUNC_VERIFY_CIRCOM_PROOF
 #define UNIFFI_FFIDEF_UNIFFI_MOPRO_BINDINGS_FN_FUNC_VERIFY_CIRCOM_PROOF
 int8_t uniffi_mopro_bindings_fn_func_verify_circom_proof(RustBuffer zkey_path, RustBuffer proof_result, RustBuffer proof_lib, RustCallStatus *_Nonnull out_status
@@ -269,6 +280,11 @@ int8_t uniffi_mopro_bindings_fn_func_verify_circom_proof(RustBuffer zkey_path, R
 #ifndef UNIFFI_FFIDEF_UNIFFI_MOPRO_BINDINGS_FN_FUNC_VERIFY_HALO2_PROOF
 #define UNIFFI_FFIDEF_UNIFFI_MOPRO_BINDINGS_FN_FUNC_VERIFY_HALO2_PROOF
 int8_t uniffi_mopro_bindings_fn_func_verify_halo2_proof(RustBuffer srs_path, RustBuffer vk_path, RustBuffer proof, RustBuffer public_input, RustCallStatus *_Nonnull out_status
+);
+#endif
+#ifndef UNIFFI_FFIDEF_UNIFFI_MOPRO_BINDINGS_FN_FUNC_VERIFY_ZKEMAIL
+#define UNIFFI_FFIDEF_UNIFFI_MOPRO_BINDINGS_FN_FUNC_VERIFY_ZKEMAIL
+int8_t uniffi_mopro_bindings_fn_func_verify_zkemail(RustBuffer srs_path, RustBuffer proof, RustCallStatus *_Nonnull out_status
 );
 #endif
 #ifndef UNIFFI_FFIDEF_FFI_MOPRO_BINDINGS_RUSTBUFFER_ALLOC
@@ -563,6 +579,18 @@ uint16_t uniffi_mopro_bindings_checksum_func_generate_halo2_proof(void
     
 );
 #endif
+#ifndef UNIFFI_FFIDEF_UNIFFI_MOPRO_BINDINGS_CHECKSUM_FUNC_PROVE
+#define UNIFFI_FFIDEF_UNIFFI_MOPRO_BINDINGS_CHECKSUM_FUNC_PROVE
+uint16_t uniffi_mopro_bindings_checksum_func_prove(void
+    
+);
+#endif
+#ifndef UNIFFI_FFIDEF_UNIFFI_MOPRO_BINDINGS_CHECKSUM_FUNC_PROVE_ZKEMAIL
+#define UNIFFI_FFIDEF_UNIFFI_MOPRO_BINDINGS_CHECKSUM_FUNC_PROVE_ZKEMAIL
+uint16_t uniffi_mopro_bindings_checksum_func_prove_zkemail(void
+    
+);
+#endif
 #ifndef UNIFFI_FFIDEF_UNIFFI_MOPRO_BINDINGS_CHECKSUM_FUNC_VERIFY_CIRCOM_PROOF
 #define UNIFFI_FFIDEF_UNIFFI_MOPRO_BINDINGS_CHECKSUM_FUNC_VERIFY_CIRCOM_PROOF
 uint16_t uniffi_mopro_bindings_checksum_func_verify_circom_proof(void
@@ -572,6 +600,12 @@ uint16_t uniffi_mopro_bindings_checksum_func_verify_circom_proof(void
 #ifndef UNIFFI_FFIDEF_UNIFFI_MOPRO_BINDINGS_CHECKSUM_FUNC_VERIFY_HALO2_PROOF
 #define UNIFFI_FFIDEF_UNIFFI_MOPRO_BINDINGS_CHECKSUM_FUNC_VERIFY_HALO2_PROOF
 uint16_t uniffi_mopro_bindings_checksum_func_verify_halo2_proof(void
+    
+);
+#endif
+#ifndef UNIFFI_FFIDEF_UNIFFI_MOPRO_BINDINGS_CHECKSUM_FUNC_VERIFY_ZKEMAIL
+#define UNIFFI_FFIDEF_UNIFFI_MOPRO_BINDINGS_CHECKSUM_FUNC_VERIFY_ZKEMAIL
+uint16_t uniffi_mopro_bindings_checksum_func_verify_zkemail(void
     
 );
 #endif
