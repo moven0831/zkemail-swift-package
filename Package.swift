@@ -29,7 +29,8 @@ let package = Package(
             dependencies: ["MoproFFI"],
             path: "Tests/",
             resources: [
-                .process("MoproAssets/multiplier2_final.zkey"),
+                .process("MoproAssets/zkemail_input.json"),
+                .process("MoproAssets/srs.local")
             ]
         )
     ]
