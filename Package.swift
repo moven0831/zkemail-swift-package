@@ -22,6 +22,10 @@ let package = Package(
             path: "Sources/"),
         .binaryTarget(
             name: "mopro",
+            path: "Sources/MoproiOSBindings/MoproBindings.xcframework.zip"
+        ),
+        .package(
+            name: "mopro",
             path: "Sources/MoproiOSBindings/MoproBindings.xcframework"
         ),
         .testTarget(
