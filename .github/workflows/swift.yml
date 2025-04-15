@@ -27,9 +27,9 @@ jobs:
                   sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
                   sudo xcodebuild -license accept
 
-            - name: unzip xcframework
-              run: |
-                  unzip Sources/MoproiOSBindings/MoproBindings.xcframework.zip -d Sources/MoproiOSBindings
+            # - name: unzip xcframework
+            #   run: |
+            #       unzip Sources/MoproiOSBindings/MoproBindings.xcframework.zip -d Sources/MoproiOSBindings
 
             - name: Run Package Build
               run: |
