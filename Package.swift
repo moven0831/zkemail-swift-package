@@ -5,6 +5,10 @@ import PackageDescription
 
 let package = Package(
     name: "MoproFFI",
+    platforms: [
+        .macOS(.v10_15),
+        .iOS(.v15),
+    ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
@@ -23,10 +27,6 @@ let package = Package(
         .binaryTarget(
             name: "mopro",
             path: "Sources/MoproiOSBindings/MoproBindings.xcframework.zip"
-        ),
-        .package(
-            name: "mopro",
-            path: "Sources/MoproiOSBindings/MoproBindings.xcframework"
         ),
         .testTarget(
             name: "MoproFFITests",
